@@ -123,6 +123,51 @@ If you have any problems regarding creating and logging into a Windows-VM, pleas
 
 - Save credentials in a Notepad file on the Desktop for later use
 
+<b>Register PHP in IIS </b>
+
+- Open IIS Manager as Administrator.
+  <img width="975" height="686" alt="image" src="https://github.com/user-attachments/assets/8070e5b2-b8d1-4267-885d-ee643082b4d1" />
+
+- Open <b>PHP Manager → Register new PHP version</b>.
+- Browse to <b>C:\PHP\php-cgi.exe</b> and select it.
+  <img width="975" height="393" alt="image" src="https://github.com/user-attachments/assets/3b77a3a4-9da2-4027-b366-b92deb0d0e5c" />
+
+- Restart IIS (Stop and Start server)
+
+<b>Extract and Move osTicket Files to IIS</b>
+
+- From the extracted osTicket files, open the upload folder.
+- Copy it into C:\inetpub\wwwroot.
+- Rename the folder from upload to osTicket (no spaces, exact casing).
+
+  <img width="492" height="348" alt="image" src="https://github.com/user-attachments/assets/601138b2-4bc2-4cab-aa4f-aa135de30558" />
+
+  <img width="975" height="221" alt="image" src="https://github.com/user-attachments/assets/eac28a30-72c3-4e5f-96cc-e7915e743c9d" />
+
+- Restart IIS again
+
+<b>Verify osTicket in Browser</b>
+- In IIS, expand Sites → Default Site → osTicket.
+- Click Browse in the Actions pane.
+- The osTicket setup page should load.
+- If errors occur, verify folder names and IIS configuration
+
+  <img width="975" height="910" alt="image" src="https://github.com/user-attachments/assets/433f724e-eb1d-4e8f-9bb8-b4b0b64ba206" />
+
+<b>Enable PHP Extensions in IIS</b>
+
+  
+
+
+
+  
+
+
+
+
+
+
+
 
 
 
