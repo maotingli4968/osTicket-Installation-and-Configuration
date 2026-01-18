@@ -84,6 +84,61 @@ If you have any problems regarding creating and logging into a Windows-VM, pleas
 
 <b> Install PHP Manager and Rewrite Module</b>
 
+- From the <b>osTicket installation files</b> folder, install <b>PHP Manager for IIS</b>.
+  <img width="975" height="805" alt="image" src="https://github.com/user-attachments/assets/7b2bd793-0a27-42ee-b72a-5ebfb4eff13c" />
+- Install the <b>Rewrite Module from the same folder</b>.
+  <img width="975" height="746" alt="image" src="https://github.com/user-attachments/assets/8fa1c4c0-8e9f-4b0f-933e-3c0633b649d4" />
+
+
+  Both are required dependencies for osTicket.
+
+
+<b>Create PHP Directory and Extract Files</b>
+- Create a new folder C:\PHP.
+<img width="975" height="425" alt="image" src="https://github.com/user-attachments/assets/aad19fd7-c301-4d7a-8658-3c7800968222" />
+
+- From the installation files, extract the PHP 7.3.8 package into this folder.
+<img width="975" height="782" alt="image" src="https://github.com/user-attachments/assets/4f78f8a8-af57-46c2-a082-36a786a1b559" />
+
+- Verify that the folder contains the PHP executables and libraries
+
+
+<b> Install VC++ Redistributable</b>
+
+- From the installation files, run the VC++ redistributable installer.
+- This is another required component for osTicket
+
+<img width="975" height="565" alt="image" src="https://github.com/user-attachments/assets/e47218a2-4865-46d1-bd90-4d6f6c6ab423" />
+
+<b>Install MySQL 5.5.62</b>
+
+- Run the MySQL installer from the installation files.
+- Choose Typical Setup.
+- Launch the Configuration Wizard → select Standard Configuration.
+
+<img width="975" height="753" alt="image" src="https://github.com/user-attachments/assets/853c198b-efe5-4ad0-a958-2cea70ff1f8b" />
+
+- Set both username and password to <b>root</b>.
+<img width="975" height="730" alt="image" src="https://github.com/user-attachments/assets/b4cf4d91-36a7-43d0-993a-9525c1c1e7eb" />
+
+- Save credentials in a Notepad file on the Desktop for later use
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
 
 
 
