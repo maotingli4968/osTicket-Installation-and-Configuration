@@ -155,6 +155,83 @@ If you have any problems regarding creating and logging into a Windows-VM, pleas
   <img width="975" height="910" alt="image" src="https://github.com/user-attachments/assets/433f724e-eb1d-4e8f-9bb8-b4b0b64ba206" />
 
 <b>Enable PHP Extensions in IIS</b>
+- In IIS, go to Sites → Default Site → osTicket → PHP Manager.
+- Enable the following extensions:
+ - php_imap.dll (mail fetching)
+ -  php_intl.dll (localization)
+ -  php_opcache.dll (performance)
+
+   <img width="577" height="949" alt="image" src="https://github.com/user-attachments/assets/3a2141d4-1155-48f0-ac80-9f0d6cd47e16" />
+   <img width="975" height="957" alt="image" src="https://github.com/user-attachments/assets/4bc5bd4c-8237-4c04-b302-37ed33c75e84" />
+
+   <b>Rename osTicket Configuration File</b>
+
+   - Navigate to C:\inetpub\wwwroot\osTicket\include.
+   - Rename ost-sampleconfig.php to ost-config.php.
+   - Right-click the file → Properties → Security → Advanced.
+   - Remove inherited permissions.
+   - Add Everyone with Full Control (lab only, not secure for production)
+
+<img width="975" height="603" alt="image" src="https://github.com/user-attachments/assets/2aff11cd-f04f-4fbe-9412-2131875195e0" />
+
+<img width="975" height="700" alt="image" src="https://github.com/user-attachments/assets/e16d7924-374d-4a00-abcd-633732fea02b" />
+
+<b>Configure osTicket Admin Account</b>
+
+- Back in the browser setup page, enter:
+  - Helpdesk Name (any value)
+  - Admin Username: adminuser
+  - Password: Password1
+  - Email addresses (any values)
+ 
+<img width="975" height="1245" alt="image" src="https://github.com/user-attachments/assets/e103c507-e677-4f17-acef-5ee82b1103ce" />
+
+<b>Create osTicket Database in MySQL with HeidiSQL</b>
+
+- From installation files, install HeidiSQL.
+<img width="975" height="737" alt="image" src="https://github.com/user-attachments/assets/14c9b3ce-3be9-4b05-a794-765faf6a9b01" />
+
+<img width="975" height="751" alt="image" src="https://github.com/user-attachments/assets/821c7798-3f00-439a-9a7a-1ba4fc38ed03" />
+
+- Create a new session with username: root, password: root.
+- Connect and create a new database named osTicket.
+- Return to the browser setup and fill in:
+  - Database Name: osTicket
+  - MySQL Username: root
+  - Password: root
+  <img width="975" height="494" alt="image" src="https://github.com/user-attachments/assets/61aa6a74-ca32-4edd-b328-dcfc8a70c095" />
+
+  - Click Install Now
+  - Successful Installation:
+    <img width="717" height="553" alt="image" src="https://github.com/user-attachments/assets/7ca27586-19fc-4b10-92c6-2099e3041e76" />
+
+    <b>Verify Installation and Login</b>
+
+    - In HeidiSQL, refresh to confirm new tables were created in the osTicket database.
+      <img width="975" height="624" alt="image" src="https://github.com/user-attachments/assets/8ff49c4f-a9d2-4489-8b77-2d4971eaeb5e" />
+
+    - In browser, navigate to: Admin login page: use adminuser / Password1 after Logging in
+      <img width="975" height="374" alt="image" src="https://github.com/user-attachments/assets/dd659f21-c23b-4afe-95ea-f814eb9c7028" />
+
+- End-user page: allows ticket submission.
+  <img width="868" height="501" alt="image" src="https://github.com/user-attachments/assets/7565f7f3-2010-4d51-980e-3d627c8bea4a" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
@@ -212,26 +289,3 @@ If you have any problems regarding creating and logging into a Windows-VM, pleas
 
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
